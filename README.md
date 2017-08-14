@@ -13,7 +13,7 @@ Since Objective-C use NSNull to represent nil in collections, you can't get the 
 ```objc
 if ([JSONDictionary[@"data"] isKindOfClass:[NSDictionary class]]) {
     NSDictionary *data = JSONDictionary[@"data"];
-    if ([data[@"user"] isKindOfClass:[NSStriNSDictionaryng class]]) {
+    if ([data[@"user"] isKindOfClass:[NSDictionary class]]) {
         NSDictionary *data = data[@"user"];
         if ([data[@"userName"] isKindOfClass:[NSString class]]) {
               // Finally...
@@ -50,7 +50,7 @@ Extra bonus: string and number values can be transformed to each other automatic
 ```objc
 if ([JSONDictionary[@"data"] isKindOfClass:[NSDictionary class]]) {
     NSDictionary *data = JSONDictionary[@"data"];
-    if ([data[@"user"] isKindOfClass:[NSStriNSDictionaryng class]]) {
+    if ([data[@"user"] isKindOfClass:[NSDictionary class]]) {
         NSDictionary *data = data[@"user"];
         if ([data[@"userName"] isKindOfClass:[NSString class]]) {
               // 终于可以拿到值了
